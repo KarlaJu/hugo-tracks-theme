@@ -11,8 +11,9 @@
   <div class="col-md-12 footer-menu">
       <a href="/">Home /</a>
       {{ range $name, $taxonomy := .Site.Sections }}
+      <a href="/about">About /</a>
+      <a href="/contact">Contact /</a>
       {{ if ne $name "post" }}
-      <a href="/{{ $name | urlize }}">{{ $name }} / </a>
       {{ end }}
       {{ end }}
 
